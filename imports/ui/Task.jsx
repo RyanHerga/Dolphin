@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
- 
+import React, { PureComponent } from "react";
+
 // Task component - represents a single todo item
-export default class Task extends Component {
-  render() {
-    return (
-      <li>{this.props.task.text}</li>
-    );
-  }
+export default class Task extends PureComponent {
+    render() {
+        const { task } = this.props;
+        const { text } = task;
+
+        return <li>{text}</li>;
+    }
 }
