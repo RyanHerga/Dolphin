@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import Task from "./Task";
+import "../sass/App.scss";
 
 // App component - represents the whole app
 export default class App extends Component {
